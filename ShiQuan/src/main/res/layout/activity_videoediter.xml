@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bottom_bg"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/video_edit"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/ivory" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical">
+
+            <Button
+                android:id="@+id/videoediter_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_back_selector"
+                android:gravity="center" />
+
+            <TableRow
+                android:id="@+id/videoediter_next"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/menu_option_noline_selector"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next"
+                    android:textColor="@color/ivory" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_next_normal"
+                    android:gravity="center_vertical" />
+            </TableRow>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <SurfaceView
+            android:id="@+id/videoediter_video"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"></SurfaceView>
+
+        <Button
+            android:id="@+id/videoediter_video_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/play" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/videoedit_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/videoediter_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/videoediter_lvjing"
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="滤镜" />
+
+                <RadioButton
+                    android:id="@+id/videoediter_mv"
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="MV" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/videoediter_select_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_select_music" />
+
+            <CheckBox
+                android:id="@+id/videoediter_sound_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/checkbox_sound_selector"
+                android:button="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <RadioGroup
+                android:id="@+id/videoediter_lvjing_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="滤镜1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="滤镜2" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="滤镜3" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="滤镜4" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="滤镜5" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="滤镜6" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="滤镜7" />
+            </RadioGroup>
+            <RadioGroup
+                android:id="@+id/videoediter_mv_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="MV1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="MV2" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="MV3" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="MV4" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="MV5" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="MV6" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:button="@null"
+                    android:background="@drawable/radiobutton_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/ivory"
+                    android:textSize="18sp"
+                    android:text="MV7" />
+            </RadioGroup>
+        </RelativeLayout>
+    </HorizontalScrollView>
+</LinearLayout>

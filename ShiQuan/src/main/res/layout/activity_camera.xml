@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/camera_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_back_selector"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center|bottom">
+
+            <CheckBox
+                android:id="@+id/camera_torch_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:button="@null"
+                android:background="@drawable/torch_selector"
+                android:checked="false" />
+
+            <CheckBox
+                android:id="@+id/camera_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:button="@null"
+                android:background="@drawable/camera_change_selector"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="490dp"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical">
+
+        <SurfaceView
+            android:id="@+id/camera_surface"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"></SurfaceView>
+
+        <ProgressBar
+            android:id="@+id/camera_seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:progressDrawable="@drawable/bg_bar"
+            android:thumb="@null"
+            android:focusable="false"
+            android:clickable="false"
+            android:longClickable="false"
+            style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/camera_cancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/camera_cancel_selecotor" />
+
+        <Button
+            android:id="@+id/camera_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:background="@drawable/camera_start_selector" />
+
+        <Button
+            android:id="@+id/camera_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/camera_save_selector" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">视圈</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="login">登录</string>
+    <string name="enter">确定</string>
+    <string name="adult">成人</string>
+    <string name="student">学生</string>
+    <string name="logout">注销</string>
+    <string name="feedback">反馈</string>
+    <string name="about">关于</string>
+    <string name="mobilephone">手机</string>
+    <string name="email">邮箱</string>
+    <string name="QQ">QQ</string>
+    <string name="send">发送</string>
+    <string name="home_page">首页</string>
+    <string name="search_friends">找朋友</string>
+    <string name="camera">摄像</string>
+    <string name="search">搜索</string>
+    <string name="share">分享</string>
+    <string name="next">下一步</string>
+    <string name="remember_password">记住密码</string>
+    <string name="interest">关注</string>
+    <string name="fans">粉丝</string>
+    <string name="personal_page">个人主页</string>
+    <string name="my_account">我的帐号</string>
+    <string name="review">评论</string>
+    <string name="detail">详情</string>
+    <string name="hot">热门</string>
+    <string name="same_city">同城</string>
+    <string name="new_message_notice">新消息通知</string>
+    <string name="wifi_auto_play">WIFI下自动播放</string>
+    <string name="more">更多</string>
+    <string name="report">举报</string>
+    <string name="I_want_to_take">我也要拍</string>
+    <string name="search_video">找视频</string>
+    <string name="shake">摇一摇</string>
+    <string name="cancel">撤销</string>
+    <string name="data_edit">编辑资料</string>
+    <string name="nick_name">昵称</string>
+    <string name="gender">性别</string>
+    <string name="area">地区</string>
+    <string name="save">保存</string>
+    <string name="cancel1">取消</string>
+    <string name="video_edit">视频编辑</string>
+    <string name="draft_box">草稿箱</string>
+    <string name="now_location">定位中</string>
+    <string name="location">位置</string>
+    <string name="label">标签</string>
+    <string name="view_code">查看二维码</string>
+    <string name="radar">视频雷达</string>
+    <string name="scan">扫一扫</string>
+    <string name="name_1">视圈小助手</string>
+    <string name="name_2">小丑</string>
+    <string name="name_3">达生M</string>
+    <string name="name_4">王图</string>
+    <string name="name_5">生生相惜</string>
+    <string name="name_6">爱上佛啊</string>
+    <string name="name_7">送的话V</string>
+    <string name="name_8">哦第是北京</string>
+    <string name="titl_1">献给武汉人</string>
+    <string name="titl_2">猫咪很萌</string>
+    <string name="titl_3">旅途风景很美好</string>
+    <string name="titl_4">我的女神</string>
+    <string name="titl_5">萌宠大集合</string>
+    <string name="titl_6">女汉子的世界我们不懂</string>
+    <string name="titl_7">神一般的世界</string>
+    <string name="titl_8">秋风草木枯</string>
+    <string name="topic_1">萌宠</string>
+    <string name="topic_2">旅途风景</string>
+    <string name="topic_3">女神</string>
+    <string name="topic_4">女汉子</string>
+    <string name="topic_5">微视频便签墙</string>
+    <string name="wuhan">武汉</string>
+    <string name="gesture">手势集</string>
+
+    <string name="cirecle">圆圈</string>
+    <string name="left_arrow">向左</string>
+    <string name="right_arrow">向右</string>
+    <string name="fork">交叉</string>
+    <string name="heart">心形</string>
+    <string name="lightning">闪电</string>
+
+
+    <string name="copyright">Copyright © 2014 New Thread Team.</string>
+    <string name="rights">All rights reserved.</string>
+
+</resources>
